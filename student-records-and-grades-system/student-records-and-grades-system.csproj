@@ -6,12 +6,9 @@
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <RootNamespace>student_records_and_grades_system</RootNamespace>
     <AssemblyName>student-records-and-grades-system</AssemblyName>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../StudentRecords.Core/StudentRecords.Core.csproj" />
-    <Compile Remove="Properties/Resources.Designer.cs;Properties/Settings.Designer.cs" />
-    <EmbeddedResource Remove="Properties/Resources.resx" />
   </ItemGroup>
 </Project>
