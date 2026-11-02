@@ -11,6 +11,7 @@ public class DebuggingRegressionTests
     {
         var service = new GradeService(new StudentRegistry());
         Assert.Throws<ArgumentException>(() => service.GetGrades(Guid.NewGuid()));
+        Assert.Throws<ArgumentException>(() => service.GetAverage(Guid.NewGuid()));
     }
 
     [Fact]

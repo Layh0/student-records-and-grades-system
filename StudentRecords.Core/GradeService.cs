@@ -14,11 +14,7 @@ public sealed class GradeService
 
     public Grade AddGrade(Guid studentId, string subject, int value)
     {
-        if (students.Find(studentId) is null)
-        {
-            Trace.TraceWarning("Grade rejected: studentId={0}, reason=student_not_found", studentId);
-            throw new ArgumentException("Студент не найден.", nameof(studentId));
-        }
+        EnsureStudentExists(studentId);
         if (string.IsNullOrWhiteSpace(subject))
             throw new ArgumentException("Укажите предмет.", nameof(subject));
         if (value is < 2 or > 5)
@@ -30,8 +26,20 @@ public sealed class GradeService
         return grade;
     }
 
-    public IReadOnlyList<Grade> GetGrades(Guid studentId) =>
-        grades.Where(grade => grade.StudentId == studentId).ToArray();
+    public IReadOnlyList<Grade> GetGrades(Guid studentId)
+    {
+        EnsureStudentExists(studentId);
+        return grades.Where(grade => grade.StudentId == studentId).ToArray();
+    }
+
+    private void EnsureStudentExists(Guid studentId)
+    {
+        if (students.Find(studentId) is null)
+        {
+            Trace.TraceWarning("Student lookup failed: studentId={0}, reason=student_not_found", studentId);
+            throw new ArgumentException("Студент не найден.", nameof(studentId));
+        }
+    }
 
     public double? GetAverage(Guid studentId)
     {
