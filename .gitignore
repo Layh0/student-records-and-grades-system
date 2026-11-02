@@ -1,1 +1,28 @@
+# Build and IDE output
+**/bin/
+**/obj/
 .vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+TestResults/
+coverage/
+*.trx
+
+# Local secrets and settings
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+appsettings.*.local.json
+
+# Temporary and OS files
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
