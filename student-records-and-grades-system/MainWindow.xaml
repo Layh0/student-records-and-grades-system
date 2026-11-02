@@ -20,7 +20,7 @@
                     <TextBox x:Name="GroupInput" />
                     <Button Content="Добавить студента" HorizontalAlignment="Left" Margin="0,8,0,12" Padding="12,5" Click="AddStudent_Click" />
                 </StackPanel>
-                <ListBox x:Name="StudentsList" DisplayMemberPath="FullName" SelectionChanged="StudentsList_SelectionChanged" />
+                <ListBox x:Name="StudentsList" DisplayMemberPath="DisplayName" SelectionChanged="StudentsList_SelectionChanged" />
             </DockPanel>
             <DockPanel Grid.Column="2">
                 <StackPanel DockPanel.Dock="Top">
