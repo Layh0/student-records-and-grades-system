@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "student-records-and-grades-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRecords.Core", "StudentRecords.Core\StudentRecords.Core.csproj", "{4A7EE1E0-BC2D-4C1A-8A9F-3AA8C7288E14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRecords.Tests", "StudentRecords.Tests\StudentRecords.Tests.csproj", "{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{4A7EE1E0-BC2D-4C1A-8A9F-3AA8C7288E14}.Release|x64.Build.0 = Release|Any CPU
 		{4A7EE1E0-BC2D-4C1A-8A9F-3AA8C7288E14}.Release|x86.ActiveCfg = Release|Any CPU
 		{4A7EE1E0-BC2D-4C1A-8A9F-3AA8C7288E14}.Release|x86.Build.0 = Release|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Debug|x64.Build.0 = Debug|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Debug|x86.Build.0 = Debug|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Release|x64.ActiveCfg = Release|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Release|x64.Build.0 = Release|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Release|x86.ActiveCfg = Release|Any CPU
+		{488AD69F-2FA3-45A2-8844-BEDF5039FEA9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
